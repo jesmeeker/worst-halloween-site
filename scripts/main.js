@@ -3,6 +3,10 @@ import { currentGuestsList } from "./guests.js";
 import { parkAreasList } from "./parkAreas.js";
 import { serviceString } from "./services.js";
 
+//// COMMENTS!!!!!!!!!!!! 
+
+//MAKE IT MAKE SENSE 
+
 
 const mainContainer = document.querySelector("#container")
 

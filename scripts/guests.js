@@ -1,5 +1,9 @@
 import { getGuests, getParkAreas } from "./database.js";
 
+
+//COMMENTS FOR TESTING
+
+
 let guests = getGuests();
 let areas = getParkAreas();
 
