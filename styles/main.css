@@ -1,6 +1,89 @@
-@import url('./details.css');
+body {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/78/13/68/1000_F_178136877_zJo7WuQFUDVPyPdz2obabZvIxo76T5nI.jpg");
+    background-color: white;
+	background-size: 250px;
+	background-repeat: repeat;
+	border: 50px white;
 
-.headerContent{
+}
+
+.headerContent {
+	display: flex;
+	position: absolute;
+	font-family: 'Island Moments', cursive;
+	top: 525.23px;
+	left: -300px;
+	font-weight: 400;
+	font-size: 175px;
+	color: limegreen;
+	text-shadow: 3px 3px yellow;
+	transform: rotate(-98.13deg);
+}
+
+.spider{
+    position: relative ;
+    float: left;
+    max-width: 300px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.web{
+	position: static;
+    float: right;
+	margin-right: -150px;
+    height: 700px;
+    width: 400px;
+}
+
+/* .boo{
+	position: static;
+    left: 600px;
+	top: 1000px;
+    max-width: 300px;
+    height: auto;
+} */
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	padding-left: 75px;
+	transform: rotate(2deg);
+}
+
+.moviesHeader{
+	font-size: 75px;
+	color:blueviolet;
+	text-shadow: 3px 3px black;
+}
+
+.reviewsHeader{
+	font-size: 110px;
+	color:orange;
+	text-shadow: 3px 3px black;
+}
+
+.movie-items{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: orange;
+	width: 1900px;
+	height: 400px;
+	border: 2px solid black
+}
+
+.review-items{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: blueviolet;
+	width: 400px;
+	height: 1900px;
+	border: 2px solid black
+}
+
+/* .headerContent{
 	padding-right: 5px;
 	padding-left: 5px;
 	font-weight: bold;
@@ -17,11 +100,7 @@
 }
 
 body {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	background-color: #67a747;
-	margin: 0px;
+
 }
 
 .services {
@@ -63,22 +142,6 @@ body {
 	justify-content: space-around;
 }
 
-header {
-	position: fixed;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	font-family: "Raleway", Arial, sans-serif;
-	color: rgb(24, 86, 65);
-	letter-spacing: 2px;
-	background-color: white;
-	box-shadow: 0px 4px 20px 4px #a2ac51;
-	padding-top: 5px;
-	padding-bottom:5px
-}
 
 footer {
 	display: flex;
@@ -120,7 +183,7 @@ h3 {
 }
 h4 {
 	font-size: 16px;
-}
+} */
 
 
 
