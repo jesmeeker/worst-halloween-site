@@ -289,3 +289,12 @@ const database = {
         }
     ]
 }
+
+
+export const getMovies = () => {
+    return database.movies.map(movies => ({...movies}))
+}
+
+export const getReviews = () => {
+    return database.reviews.map(reviews => ({...reviews}))
+}
