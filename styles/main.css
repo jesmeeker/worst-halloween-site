@@ -43,6 +43,16 @@ body {
 	text-shadow: 3px 3px yellow;
 	font-size: 50px;
 }
+
+.friends{
+	display: flex;
+	position:absolute;
+	top: 1100px;
+	left: 450px;
+	justify-content: flex-end;
+	margin: -150px 0px -1000px -85px;
+  }
+  
 /* .tomatoes{
 	position: relative; 
 	width: 400px;
@@ -103,7 +113,7 @@ body {
 	height: 1000px;
 	border: 2px solid black;
 	overflow:scroll;
-	overflow-x:hidden;
+	overflow-x:scroll;
 }
 
 .testImage{
