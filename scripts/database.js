@@ -1,7 +1,6 @@
 
 /////comments are being made.....
 
-
 const database = {
     movies: [
         {
@@ -9,7 +8,7 @@ const database = {
             synopsis: "The Orphanage centers on Laura (Belén Rueda) who purchases her beloved childhood orphanage with dreams of restoring & reopening the abandoned facility as a place for disabled children.", 
             title: "The Orphanage", 
             length: "1 h 45 min", 
-            img: "/photos/orphange.jpg", 
+            img: "/photos/orphanage.jpg", 
             link: `<a href="https://www.amazon.com/16-Color-Activated-Detection-Birthday-Gadgets/dp/B07L2Y62G2/ref=sr_1_7?keywords=Random+Cool+Stuff&qid=1666814756&qu=eyJxc2MiOiI3Ljg3IiwicXNhIjoiNy41MyIsInFzcCI6IjYuMjYifQ%3D%3D&sr=8-7">Click</a>`
         },
         {

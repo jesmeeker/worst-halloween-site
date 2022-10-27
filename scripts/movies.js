@@ -1,30 +1,28 @@
-import { movies, reviews } from './database.js'
+import { getMovies, getReviews } from "./database.js"
 
-const Movies = movies()
-const Reviews = reviews()
+const Movies = getMovies()
+const Reviews = getReviews()
 
-const movieContainer = document.querySelector(".moviesHere")
-const reviewContainer = document.querySelector(".reviewsHere")
+
 
 //iterate through each movie, conver the image to html
-const prepareMovies = () =>{
-    let htmlMovies = ''
+export const prepareMovies = () =>{
+    let htmlMovies = ``
     for (const movie of Movies){
         htmlMovies += `
-         <article>
              <div class="testImage">
-                 <img scr="${movie.img}" alt="Boo!" width="500" height="600"/>
+                 <img id="img" src="${movie.img}" alt="scaryMovieImage">
              </div>
              <div class="movieInfo">
                   ${movie.title}: ${movie.synopsis}
-             </div>
-         </article>`
+                  ${movie.link} Click here to buy this movie
+             </div>`
      }
     return htmlMovies
 }
 
-const prepareReviews = () => {
-    let htmlReviews = ''
+export const prepareReviews = () => {
+    let htmlReviews = ``
     for (const movie of Movies){
         for (const review of Reviews){
             if (movie.id === review.movieId){
@@ -48,5 +46,3 @@ const prepareReviews = () => {
     return htmlReviews
 }
 
-movieContainer.innerHTML = prepareMovies
-reviewContainer.innerHTML = prepareReviews

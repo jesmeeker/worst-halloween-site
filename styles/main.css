@@ -82,8 +82,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 1500px;
-	height: 400px;
+	width: 2000px;
+	height: 700px;
 	border: 2px solid black;
 	overflow: scroll;
     overflow-y: hidden;
@@ -103,13 +103,36 @@ body {
 
 /* Boxes below are for the images and reviews to be inserted by Grace's functions. May need to resize or set image or font property to make them fit. */
 
-.testImage{
+
+.moviesHere{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#img{
+	/* display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap; */
 	position: relative;
 	border: 2px solid black;
 	background-color: transparent;
-	min-width: 300px;
-	min-height: 400px;
+	width: 600px;
+	height: 500px;
 	align-self: center;
+}
+/* 
+.testImage{
+	padding: 10px;
+} */
+
+.movieInfo{
+	padding: 10px;
+	/* background-color: black;
+	color: white; */
+	width: 200px;
+	font-size: 25px;
+	padding-right: 80px;
 }
 
 .testReview{
