@@ -100,8 +100,8 @@ body {
 	width: 1500px;
 	height: 400px;
 	border: 2px solid black;
-	overflow:scroll;
-    overflow-y:hidden;
+	overflow: scroll;
+    overflow-y: hidden;
 }
 
 .review-box{
