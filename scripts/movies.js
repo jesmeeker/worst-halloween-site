@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { movies, reviews } from './database.js'
 
 const movies = movies();
@@ -15,4 +16,7 @@ for (movie of movies){
 }
 =======
 
+>>>>>>> main
+=======
+////MOVIES
 >>>>>>> main

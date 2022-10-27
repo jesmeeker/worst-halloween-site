@@ -1,3 +1,7 @@
+
+/////comments are being made.....
+
+
 const database = {
     movies: [
         {
@@ -5,7 +9,7 @@ const database = {
             synopsis: "The Orphanage centers on Laura (Belén Rueda) who purchases her beloved childhood orphanage with dreams of restoring & reopening the abandoned facility as a place for disabled children.", 
             title: "The Orphanage", 
             length: "1 h 45 min", 
-            img: "", 
+            img: "/photos/orphange.jpg", 
             link: `<a href="https://www.amazon.com/16-Color-Activated-Detection-Birthday-Gadgets/dp/B07L2Y62G2/ref=sr_1_7?keywords=Random+Cool+Stuff&qid=1666814756&qu=eyJxc2MiOiI3Ljg3IiwicXNhIjoiNy41MyIsInFzcCI6IjYuMjYifQ%3D%3D&sr=8-7">Click</a>`
         },
         {
@@ -13,7 +17,7 @@ const database = {
             synopsis: "Based on a true story, ghost hunters Lorraine and Ed Warren help a family terrorized by a dark spirit.",
             title: "The Conjuring",
             length: "1 h 51 min",
-            img: "",
+            img: "/photos/conjuring.jpg",
             link: `<a href="https://puginarug.com/">Click</a>`
         },
         {
@@ -21,7 +25,7 @@ const database = {
             synopsis: "Young Damien Thorn is believed to be the Antichrist after a series of violent deaths occur around the family that all involve the sinister five-year-old.", 
             title: "The Omen", 
             length: "1 h 50 min" , 
-            img: "" , 
+            img: "/photos/omen.jpg", 
             link: `<a href="https://youtu.be/dQw4w9WgXcQ">Click</a>`
         },
         {
@@ -29,7 +33,7 @@ const database = {
             synopsis: "In classic horror film genre that launched a movie franchise, a pedophile who was murdered by a lynch mob returns years later in terrifying nightmares of his killers' teenage children.", 
             title: "A Nightmare on Elm Street", 
             length: "1 h 31 min", 
-            img: "", 
+            img: "/photos/nightmare_on_elm.jpg", 
             link: `<a href="https://alwaysjudgeabookbyitscover.com/">Click</a>`
         },
         {
@@ -37,7 +41,7 @@ const database = {
             synopsis: "The tale of a spelunking gone wrong still has a cult following today. If you don't have claustrophobia now, you absolutely will after watching the cramped cave horror of The Descent.", 
             title: "The Descent", 
             length: "1 h 38 min", 
-            img: "", 
+            img: "/photos/descent.jpg", 
             link: `<a href="http://v1.windows93.net/">Click</a>`
         },
         {
@@ -45,7 +49,7 @@ const database = {
             synopsis: "If The Exorcist can still make its original 1973 viewers shudder at the thought of it decades later, there’s clearly something possessing about this film—which is based on the last known Catholic-sanctioned exorcism in the U.S.", 
             title: "The Exorcist", 
             length: "2 h 1 min", 
-            img: "", 
+            img: "/photos/exorcist.jpg", 
             link: `<a href="http://www.bristlr.com/">Click</a>`
         },
         {
@@ -53,7 +57,7 @@ const database = {
             synopsis: "Student Helen Lyle learns of the terrifying local legend of The Candyman - a hooked serial killer who appears when you say his name in a mirror, five times.", 
             title: "The Candyman", 
             length: "1 h 38 min", 
-            img: "", 
+            img: "/photos/candyman.jpg", 
             link: `<a href="https://pointerpointer.com/">Click</a>`
         },
         {
@@ -61,7 +65,7 @@ const database = {
             synopsis: "A couple on the outs arrives at a cozy childhood home in the woods, only to be terrorized by a group of masked intruders. The random, motiveless violence is what makes the whole thing so brutal.", 
             title: "The Strangers", 
             length: "1 h 25 min", 
-            img: "", 
+            img: "/photos/strangers.jpg", 
             link: `<a href="https://www.amazon.com/Elmers-Disappearing-Purple-School-E562/dp/B00143SNPG/ref=zg_bs_arts-crafts_23/142-3285647-5902325?pd_rd_i=B0B5YQL66Z&psc=1&tag=feeling-primey-20">Click</a>`
         }
     ],
@@ -284,4 +288,13 @@ const database = {
             user: "MarkzPatel"
         }
     ]
+}
+
+
+export const getMovies = () => {
+    return database.movies.map(movies => ({...movies}))
+}
+
+export const getReviews = () => {
+    return database.reviews.map(reviews => ({...reviews}))
 }
